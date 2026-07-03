@@ -108,7 +108,7 @@ export const portfolioData = {
       ],
       projectContext: "Full-Stack AI Project integrating MERN and MCP.",
       tags: ["React", "Node.js", "MongoDB", "MCP", "Python"],
-      github: "https://github.com/muhammadhamad1104/ai-cv-generator"
+      github: "https://github.com/muhammadhamad1104/cv-generator"
     },
     {
       title: "Agentic Website Converter",
@@ -173,7 +173,7 @@ export const portfolioData = {
       ],
       projectContext: "Academic project exploring NLP and GenAI architectures.",
       tags: ["Python", "FastAPI", "React", "LangChain", "Groq"],
-      github: "https://github.com/muhammadhamad1104/AI-University-Chatbot"
+      github: "https://github.com/muhammadhamad1104/nlp-chatbot"
     },
     {
       title: "DigiDine (Restaurant AI Chatbot)",
@@ -205,7 +205,8 @@ export const portfolioData = {
       ],
       projectContext: "Full-stack project focusing on AI integration in hospitality.",
       tags: ["React", "Node.js", "AI Chatbot", "MongoDB"],
-      github: "https://github.com/muhammadhamad1104/digidine"
+      github: "https://github.com/muhammadhamad1104/digidine",
+      liveUrl: "https://digidine.us"
     },
     {
       title: "Irf Wardrobe",
@@ -243,7 +244,8 @@ export const portfolioData = {
       ],
       projectContext: "E-commerce platform development.",
       tags: ["React", "Node.js", "E-Commerce", "MongoDB"],
-      github: "https://github.com/muhammadhamad1104/irf-wardrobe"
+      github: "https://github.com/muhammadhamad1104/irf-wardrobe",
+      liveUrl: "https://irfwardrobe.com"
     }
   ],
   spotlight: {
@@ -287,7 +289,7 @@ export const portfolioData = {
     ],
     projectContext: "Open-source high-performance agent routing and API management system.",
     tags: ["FastAPI", "Python", "Celery", "Redis", "Docker"],
-    github: "https://github.com/Muhammad-Hamad/AI-OS"
+    github: "https://github.com/muhammadhamad1104/AI-OS"
   },
   capabilities: [
     {

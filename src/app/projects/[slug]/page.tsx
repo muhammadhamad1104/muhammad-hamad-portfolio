@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { SectionContainer } from "@/components/ui/SectionContainer";
 import { ButtonLink } from "@/components/ui/Button";
 import { portfolioData } from "@/data/portfolio";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Globe } from "lucide-react";
 import { GithubIcon as Github } from "@/components/ui/Icons";
 import { MobileScreenCarousel } from "@/components/ui/MobileScreenCarousel";
 import { notFound } from "next/navigation";
@@ -319,13 +319,18 @@ export default async function ProjectPage({
                 </p>
               </div>
 
-              {project.github && (
-                <div className="pt-6">
+              <div className="flex flex-col gap-3 pt-6">
+                {project.liveUrl && (
+                  <ButtonLink href={project.liveUrl} variant="primary" className="w-full" target="_blank" rel="noopener noreferrer">
+                    <Globe size={18} className="shrink-0" /> Visit Live Site
+                  </ButtonLink>
+                )}
+                {project.github && (
                   <ButtonLink href={project.github} variant="outline" className="w-full" target="_blank" rel="noopener noreferrer">
                     <Github size={18} className="shrink-0" /> View on GitHub
                   </ButtonLink>
-                </div>
-              )}
+                )}
+              </div>
             </div>
           </div>
           

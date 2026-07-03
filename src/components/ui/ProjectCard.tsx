@@ -1,6 +1,6 @@
 import { PremiumPlaceholder } from "./PremiumPlaceholder";
 import { ButtonLink } from "./Button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Globe } from "lucide-react";
 import { GithubIcon as Github } from "./Icons";
 import * as motion from "motion/react-client";
 import Image from "next/image";
@@ -17,6 +17,7 @@ interface ProjectCardProps {
     coverImage?: string;
     tags: string[];
     github: string;
+    liveUrl?: string;
   };
   index: number;
 }
@@ -86,10 +87,18 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           <ButtonLink href={`/projects/${project.slug}`} variant="primary">
             Case Study <ArrowRight size={16} className="shrink-0" />
           </ButtonLink>
-          <ButtonLink href={project.github} variant="ghost" size="sm" className="px-3 ml-auto" target="_blank" rel="noopener noreferrer">
-            <Github size={18} className="shrink-0" />
-            <span className="sr-only sm:not-sr-only sm:inline-block">GitHub</span>
-          </ButtonLink>
+          <div className="flex gap-2 ml-auto">
+            {project.liveUrl && (
+              <ButtonLink href={project.liveUrl} variant="ghost" size="sm" className="px-3" target="_blank" rel="noopener noreferrer">
+                <Globe size={18} className="shrink-0" />
+                <span className="sr-only sm:not-sr-only sm:inline-block">Live</span>
+              </ButtonLink>
+            )}
+            <ButtonLink href={project.github} variant="ghost" size="sm" className="px-3" target="_blank" rel="noopener noreferrer">
+              <Github size={18} className="shrink-0" />
+              <span className="sr-only sm:not-sr-only sm:inline-block">GitHub</span>
+            </ButtonLink>
+          </div>
         </div>
       </div>
     </motion.div>
