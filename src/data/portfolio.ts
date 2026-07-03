@@ -205,7 +205,6 @@ export const portfolioData = {
       ],
       projectContext: "Full-stack project focusing on AI integration in hospitality.",
       tags: ["React", "Node.js", "AI Chatbot", "MongoDB"],
-      github: "https://github.com/muhammadhamad1104/digidine",
       liveUrl: "https://digidine.us"
     },
     {
@@ -244,7 +243,6 @@ export const portfolioData = {
       ],
       projectContext: "E-commerce platform development.",
       tags: ["React", "Node.js", "E-Commerce", "MongoDB"],
-      github: "https://github.com/muhammadhamad1104/irf-wardrobe",
       liveUrl: "https://irfwardrobe.com"
     }
   ],

@@ -16,7 +16,7 @@ interface ProjectCardProps {
     coverImageReady?: boolean;
     coverImage?: string;
     tags: string[];
-    github: string;
+    github?: string;
     liveUrl?: string;
   };
   index: number;
