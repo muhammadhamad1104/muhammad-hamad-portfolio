@@ -14,7 +14,7 @@ export const portfolioData = {
   },
   resume: {
     isAvailable: true,
-    fileUrl: "/files/Muhammad_Hamad_CV.pdf.pdf"
+    fileUrl: "/files/Muhammad_Hamad_CV.pdf"
   },
   credibility: [
     { label: "Focus", value: "Generative AI & Agentic Systems" },
