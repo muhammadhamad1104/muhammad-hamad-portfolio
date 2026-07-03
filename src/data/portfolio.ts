@@ -181,8 +181,9 @@ export const portfolioData = {
       category: "Full-Stack AI Project",
       status: "Built",
       contribution: "Full-Stack Developer",
-      coverImageReady: false,
+      coverImageReady: true,
       coverImage: "/images/projects/digidine/digidine-cover.png",
+      deviceType: "browser",
       description: "A comprehensive restaurant management system integrated with an AI Chatbot for seamless customer interaction and operations.",
       overview: "DigiDine is a robust restaurant management system built to streamline operations and enhance the customer experience using an integrated AI Chatbot.",
       problem: "Restaurants often face operational bottlenecks and struggle to handle customer inquiries efficiently during peak hours.",
@@ -195,7 +196,13 @@ export const portfolioData = {
       ],
       technology: "MERN Stack, Python, NLP, Chatbot",
       screenGalleryLabel: "Application screens",
-      mobileScreens: [],
+      mobileScreens: [
+        { image: "/images/projects/digidine/digidine-home.png", title: "DigiDine Home", caption: "Landing page for the restaurant system.", alt: "DigiDine home" },
+        { image: "/images/projects/digidine/private-sign-in.png", title: "Private Portal", caption: "Secure sign-in for administrators.", alt: "Private sign-in" },
+        { image: "/images/projects/digidine/admin-dashbord.png", title: "Admin Dashboard", caption: "Management dashboard for staff.", alt: "Admin dashboard" },
+        { image: "/images/projects/digidine/admin-dashboard-statistics.png", title: "Statistics", caption: "Detailed analytics and insights.", alt: "Dashboard statistics" },
+        { image: "/images/projects/digidine/dini-ai-chatbot-using-openai-langchain-rag-databases.png", title: "Dini AI Chatbot", caption: "Integrated NLP-based customer service bot.", alt: "Dini AI chatbot" }
+      ],
       projectContext: "Full-stack project focusing on AI integration in hospitality.",
       tags: ["React", "Node.js", "AI Chatbot", "MongoDB"],
       github: "https://github.com/muhammadhamad1104/digidine"
