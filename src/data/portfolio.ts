@@ -75,7 +75,7 @@ export const portfolioData = {
       status: "Built",
       contribution: "Full-Stack Developer",
       coverImageReady: true,
-      coverImage: "/images/projects/cv-generator/cv-gen-cover.png",
+      coverImage: "/images/projects/cv-generator/cv-gen-cover-v2.png",
       deviceType: "browser",
       description: "A full-stack system using React 19, Node.js, and MongoDB that automates the CV lifecycle through natural language commands via Claude Desktop.",
       overview: "Built a full-stack system using React 19, Node.js, and MongoDB that automates the CV lifecycle through natural language commands via Claude Desktop.",
