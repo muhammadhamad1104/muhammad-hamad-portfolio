@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #171816;
+  --color-background-secondary: #1F211D;
+  --color-surface: #282823;
+  --color-surface-hover: #302F29;
+  --color-text-primary: #F3EEE6;
+  --color-text-muted: #B8B1A6;
+  --color-accent-primary: #D58469;
+  --color-accent-primary-hover: #C5745D;
+  --color-accent-sage: #9DAA82;
+  --color-accent-steel: #7F98A2;
+  --color-border: #3A3932;
+  --color-focus-ring: #E7B39F;
+}
+
+@theme inline {
+  --font-sans: var(--font-poppins);
+}
+
+:root {
+  --background: var(--color-background);
+  --foreground: var(--color-text-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure focus states are visible for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+/* --- Ticker CSS Rules --- */
+.tickerViewport {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.tickerTrack {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  will-change: transform;
+  animation: ticker-scroll 38s linear infinite;
+}
+
+.tickerGroup {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 0 0 auto;
+  width: max-content;
+}
+
+.tickerItem {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.tickerViewport:hover .tickerTrack,
+.tickerViewport:focus-within .tickerTrack {
+  animation-play-state: paused;
+}
