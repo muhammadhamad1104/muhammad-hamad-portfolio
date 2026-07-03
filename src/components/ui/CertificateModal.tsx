@@ -80,18 +80,28 @@ export function CertificateModal({
         {/* Content */}
         <div className="flex-1 overflow-auto bg-surface p-4 sm:p-6 flex flex-col items-center justify-center min-h-[50vh]">
           {certificate.isAvailable ? (
-            <object 
-              data={certificate.fileUrl} 
-              type="application/pdf" 
-              className="w-full h-full min-h-[60vh] rounded-xl border border-border"
-            >
-              <div className="flex flex-col items-center justify-center h-full min-h-[40vh] text-center p-6 border border-border border-dashed rounded-xl">
-                <p className="text-text-muted mb-4">Your browser does not support inline PDF viewing.</p>
-                <ButtonLink href={certificate.fileUrl} download variant="primary">
-                  Download Certificate PDF
-                </ButtonLink>
+            certificate.fileUrl.toLowerCase().endsWith('.pdf') ? (
+              <object 
+                data={certificate.fileUrl} 
+                type="application/pdf" 
+                className="w-full h-full min-h-[60vh] rounded-xl border border-border"
+              >
+                <div className="flex flex-col items-center justify-center h-full min-h-[40vh] text-center p-6 border border-border border-dashed rounded-xl">
+                  <p className="text-text-muted mb-4">Your browser does not support inline PDF viewing.</p>
+                  <ButtonLink href={certificate.fileUrl} download variant="primary">
+                    Download Certificate PDF
+                  </ButtonLink>
+                </div>
+              </object>
+            ) : (
+              <div className="w-full h-full min-h-[50vh] flex items-center justify-center rounded-xl bg-background border border-border overflow-hidden p-4">
+                <img 
+                  src={certificate.fileUrl} 
+                  alt={`${certificate.title} Certificate`} 
+                  className="max-w-full max-h-[70vh] object-contain rounded-lg shadow-sm"
+                />
               </div>
-            </object>
+            )
           ) : (
             <div className="flex flex-col items-center text-center max-w-md mx-auto">
               <div className="w-16 h-16 rounded-full bg-surface-hover flex items-center justify-center mb-6 text-accent-sage">
@@ -109,7 +119,7 @@ export function CertificateModal({
         {certificate.isAvailable && (
           <div className="flex items-center justify-end p-4 border-t border-border bg-background-secondary">
             <ButtonLink href={certificate.fileUrl} download variant="outline" size="sm" className="gap-2">
-              <Download size={16} className="shrink-0" /> Download PDF
+              <Download size={16} className="shrink-0" /> Download {certificate.fileUrl.toLowerCase().endsWith('.pdf') ? 'PDF' : 'Image'}
             </ButtonLink>
           </div>
         )}

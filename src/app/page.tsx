@@ -108,6 +108,11 @@ export default function Home() {
               <ProjectCard key={project.slug} project={project} index={index} />
             ))}
           </div>
+          <div className="mt-12 flex justify-center">
+            <ButtonLink href={portfolioData.personal.github} target="_blank" rel="noopener noreferrer" variant="outline">
+              <Github size={18} className="shrink-0" /> Explore More on GitHub
+            </ButtonLink>
+          </div>
         </SectionContainer>
 
         {/* 5. Engineering Spotlight */}
@@ -141,8 +146,8 @@ export default function Home() {
             </div>
             <div className="md:w-5/12 w-full h-64 md:h-80 relative bg-surface border border-border rounded-2xl overflow-hidden">
               <Image 
-                src="/images/projects/trilex-compiler/trilex-compiler-pipeline.png"
-                alt="Trilex compiler pipeline showing source tri program, lexical analysis, token stream, grammar rules, LL1 parsing, semantic analysis, and diagnostics"
+                src="/images/projects/ai-os-platform/cover-ai-os.png"
+                alt="AI-OS Platform Overview"
                 fill
                 className="object-contain"
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 40vw, 400px"
@@ -221,36 +226,15 @@ export default function Home() {
           </div>
         </SectionContainer>
 
-        {/* 10. More Builds & Learning */}
+        {/* 10. Learning & Recognition */}
         <SectionContainer className="bg-background-secondary border-y border-border">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-12">
-            
-            {/* More Builds */}
-            <div>
-              <h3 className="text-2xl font-bold text-text-primary mb-6">More Builds</h3>
-              <ul className="space-y-4 mb-8">
-                {portfolioData.moreBuilds.map((build, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <ArrowRight className="text-accent-primary mt-1 shrink-0" size={16} />
-                    <span className="text-text-muted">{build}</span>
-                  </li>
-                ))}
-              </ul>
-              <ButtonLink href={portfolioData.personal.github} target="_blank" rel="noopener noreferrer" variant="outline">
-                <Github size={18} className="shrink-0" /> Explore More on GitHub
-              </ButtonLink>
+          <div className="max-w-5xl mx-auto">
+            <h3 className="text-3xl font-bold text-text-primary mb-8 text-center">Learning & Recognition</h3>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {portfolioData.certificates.map((cert, index) => (
+                <CertificateCard key={index} certificate={cert} index={index} />
+              ))}
             </div>
-
-            {/* Learning & Recognition */}
-            <div>
-              <h3 className="text-2xl font-bold text-text-primary mb-6">Learning & Recognition</h3>
-              <div className="flex flex-col gap-4">
-                {portfolioData.certificates.map((cert, index) => (
-                  <CertificateCard key={index} certificate={cert} index={index} />
-                ))}
-              </div>
-            </div>
-
           </div>
         </SectionContainer>
 

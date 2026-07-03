@@ -74,8 +74,8 @@ export const portfolioData = {
       category: "MERN + MCP Project",
       status: "Built",
       contribution: "Full-Stack Developer",
-      coverImageReady: true,
-      coverImage: "/images/projects/mian-traders/mian-traders-cover.png",
+      coverImageReady: false,
+      coverImage: "/images/projects/ai-cv-generator/ai-cv-generator-cover.png",
       description: "A full-stack system using React 19, Node.js, and MongoDB that automates the CV lifecycle through natural language commands via Claude Desktop.",
       overview: "Built a full-stack system using React 19, Node.js, and MongoDB that automates the CV lifecycle through natural language commands via Claude Desktop.",
       problem: "Creating and formatting professional CVs is often tedious and time-consuming. Users need a way to generate professional resumes through simple conversational interfaces.",
@@ -101,8 +101,8 @@ export const portfolioData = {
       category: "Final Year Project",
       status: "In Development",
       contribution: "AI Engineer",
-      coverImageReady: true,
-      coverImage: "/images/projects/ar-ecommerce/auracart-ar-cover.png",
+      coverImageReady: false,
+      coverImage: "/images/projects/agentic-website-converter/agentic-website-converter-cover.png",
       description: "An AI-driven tool to convert static UI designs into dynamic, functional MERN components using agentic AI orchestration.",
       overview: "Developing an AI-driven tool to convert static UI designs into dynamic, functional MERN components using agentic AI orchestration.",
       problem: "Translating static UI designs into functional, full-stack components is a manual, repetitive process that slows down development.",
@@ -159,6 +159,57 @@ export const portfolioData = {
       projectContext: "Academic project exploring NLP and GenAI architectures.",
       tags: ["Python", "FastAPI", "React", "LangChain", "Groq"],
       github: "https://github.com/muhammadhamad1104/AI-University-Chatbot"
+    },
+    {
+      title: "DigiDine (Restaurant AI Chatbot)",
+      slug: "digidine",
+      category: "Full-Stack AI Project",
+      status: "Built",
+      contribution: "Full-Stack Developer",
+      coverImageReady: false,
+      coverImage: "/images/projects/digidine/digidine-cover.png",
+      description: "A comprehensive restaurant management system integrated with an AI Chatbot for seamless customer interaction and operations.",
+      overview: "DigiDine is a robust restaurant management system built to streamline operations and enhance the customer experience using an integrated AI Chatbot.",
+      problem: "Restaurants often face operational bottlenecks and struggle to handle customer inquiries efficiently during peak hours.",
+      approach: "Developed a full-stack platform with an integrated NLP-based AI Chatbot to handle reservations, menu queries, and support.",
+      myContribution: "Engineered the full-stack backend and integrated the AI Chatbot into the customer-facing interface.",
+      keyCapabilities: [
+        "AI Chatbot for customer inquiries",
+        "Restaurant management dashboard",
+        "Full-stack MERN architecture"
+      ],
+      technology: "MERN Stack, Python, NLP, Chatbot",
+      screenGalleryLabel: "Application screens",
+      mobileScreens: [],
+      projectContext: "Full-stack project focusing on AI integration in hospitality.",
+      tags: ["React", "Node.js", "AI Chatbot", "MongoDB"],
+      github: "https://github.com/muhammadhamad1104/digidine"
+    },
+    {
+      title: "Irf Wardrobe",
+      slug: "irf-wardrobe",
+      category: "Full-Stack E-Commerce",
+      status: "Built",
+      contribution: "Full-Stack Developer",
+      coverImageReady: false,
+      coverImage: "/images/projects/irf-wardrobe/irf-wardrobe-cover.png",
+      description: "A complete full-stack e-commerce platform with a modern UI and secure checkout.",
+      overview: "Irf Wardrobe is a modern e-commerce platform offering a seamless shopping experience with a secure checkout flow and inventory management.",
+      problem: "Small retail businesses need a reliable, customized e-commerce presence to scale their operations without high overhead.",
+      approach: "Built a fully functional MERN stack e-commerce application featuring product catalogs, cart management, and secure payment processing.",
+      myContribution: "Developed the frontend store, built the backend API for product and user management, and implemented the checkout flow.",
+      keyCapabilities: [
+        "Product catalog and search",
+        "Shopping cart management",
+        "Secure checkout integration",
+        "Admin inventory dashboard"
+      ],
+      technology: "MERN Stack, React, Node.js, Express, MongoDB",
+      screenGalleryLabel: "Platform screens",
+      mobileScreens: [],
+      projectContext: "E-commerce platform development.",
+      tags: ["React", "Node.js", "E-Commerce", "MongoDB"],
+      github: "https://github.com/muhammadhamad1104/irf-wardrobe"
     }
   ],
   spotlight: {
@@ -168,7 +219,7 @@ export const portfolioData = {
     status: "Built",
     contribution: "AI Systems Architect",
     coverImageReady: true,
-    coverImage: "/images/projects/trilex-compiler/trilex-cover.png",
+    coverImage: "/images/projects/ai-os-platform/cover-ai-os.png",
     deviceType: "browser",
     description: "Architected and open-sourced a high-performance modular monolith system designed for agent routing, automated API key rotation, and real-time observability.",
     overview: "AI-OS is a high-performance modular monolith system designed for agent routing, automated API key rotation, and real-time observability.",
@@ -185,8 +236,21 @@ export const portfolioData = {
       "Docker Compose containerization of 8-microservice stack"
     ],
     technology: "FastAPI, Python, Celery, Redis, Playwright, Next.js, Docker, Prometheus, Grafana",
-    screenGalleryLabel: "Architecture interface concept",
-    mobileScreens: [],
+    screenGalleryLabel: "Platform screens",
+    mobileScreens: [
+      { image: "/images/projects/ai-os-platform/dashboard.png", title: "Dashboard", caption: "Main system overview.", alt: "Dashboard" },
+      { image: "/images/projects/ai-os-platform/providers.png", title: "Providers", caption: "LLM provider configurations.", alt: "Providers" },
+      { image: "/images/projects/ai-os-platform/api-keys.png", title: "API Keys", caption: "Key management and rotation.", alt: "API keys" },
+      { image: "/images/projects/ai-os-platform/accounts.png", title: "Accounts", caption: "User account management.", alt: "Accounts" },
+      { image: "/images/projects/ai-os-platform/ai-os.png", title: "AI-OS Core", caption: "Core system settings.", alt: "AI-OS core" },
+      { image: "/images/projects/ai-os-platform/chat.png", title: "Chats", caption: "Agent interactions.", alt: "Chats" },
+      { image: "/images/projects/ai-os-platform/usage.png", title: "Usage", caption: "API consumption tracking.", alt: "Usage" },
+      { image: "/images/projects/ai-os-platform/monitoring.png", title: "Monitoring", caption: "Real-time system monitoring.", alt: "Monitoring" },
+      { image: "/images/projects/ai-os-platform/queue.png", title: "Queue", caption: "Request queue management.", alt: "Queue" },
+      { image: "/images/projects/ai-os-platform/logs.png", title: "Logs", caption: "System activity logs.", alt: "Logs" },
+      { image: "/images/projects/ai-os-platform/proxies.png", title: "Proxies", caption: "Network proxy configuration.", alt: "Proxies" },
+      { image: "/images/projects/ai-os-platform/settings.png", title: "Settings", caption: "Platform configurations.", alt: "Settings" }
+    ],
     projectContext: "Open-source high-performance agent routing and API management system.",
     tags: ["FastAPI", "Python", "Celery", "Redis", "Docker"],
     github: "https://github.com/Muhammad-Hamad/AI-OS"
@@ -230,11 +294,6 @@ export const portfolioData = {
       company: "Client Project",
       period: "Mar 2025 – Jun 2025"
     }
-  ],
-  moreBuilds: [
-    "Irf Wardrobe - Full-Stack E-commerce",
-    "Neural Network Classification System",
-    "DigiDine Restaurant Management System (AI Chatbot)"
   ],
   certificates: [
     {
