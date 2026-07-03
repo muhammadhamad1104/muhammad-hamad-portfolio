@@ -94,10 +94,12 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                 <span className="sr-only sm:not-sr-only sm:inline-block">Live</span>
               </ButtonLink>
             )}
-            <ButtonLink href={project.github} variant="ghost" size="sm" className="px-3" target="_blank" rel="noopener noreferrer">
-              <Github size={18} className="shrink-0" />
-              <span className="sr-only sm:not-sr-only sm:inline-block">GitHub</span>
-            </ButtonLink>
+            {project.github && (
+              <ButtonLink href={project.github} variant="ghost" size="sm" className="px-3" target="_blank" rel="noopener noreferrer">
+                <Github size={18} className="shrink-0" />
+                <span className="sr-only sm:not-sr-only sm:inline-block">GitHub</span>
+              </ButtonLink>
+            )}
           </div>
         </div>
       </div>
