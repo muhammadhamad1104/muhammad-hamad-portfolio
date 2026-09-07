@@ -373,17 +373,13 @@ export const portfolioData = {
   ],
   certificates: [
     {
-      title: "Introduction to Model Context Protocol",
+      title: "Model Context Protocol Specialization",
       provider: "Anthropic",
       date: "2026",
-      fileUrl: "/files/certificates/introduction-to-model-context-protocol.pdf",
-      isAvailable: true
-    },
-    {
-      title: "Advanced Model Context Protocol Topics",
-      provider: "Anthropic",
-      date: "2026",
-      fileUrl: "/files/certificates/model-context-protocol-advanced-topic.pdf",
+      fileUrls: [
+        "/files/certificates/introduction-to-model-context-protocol.pdf",
+        "/files/certificates/model-context-protocol-advanced-topic.pdf"
+      ],
       isAvailable: true
     },
     {
