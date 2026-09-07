@@ -87,10 +87,7 @@ export default function Home() {
                   </span>
                   <span className="text-xs font-semibold text-accent-sage uppercase tracking-wider">In Development</span>
                 </div>
-                <div>
-                  <p className="text-sm font-semibold text-text-primary mb-1 line-clamp-1">Agentic Website Converter</p>
-                  <p className="text-xs text-text-muted">Agentic AI · GenAI · React</p>
-                </div>
+
                 <div>
                   <p className="text-sm font-semibold text-text-primary mb-1 line-clamp-1">Jarvis Voice Assistant</p>
                   <p className="text-xs text-text-muted">ElevenLabs · AI · Python</p>
