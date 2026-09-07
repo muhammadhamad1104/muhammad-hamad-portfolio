@@ -10,7 +10,7 @@ export const portfolioData = {
     phone: "+92-302-1104820",
     whatsapp: "https://wa.me/923021104820",
     github: "https://github.com/muhammadhamad1104",
-    linkedin: "https://www.linkedin.com/in/muhammad-hamad-7b6b35293"
+    linkedin: "https://www.linkedin.com/in/muhammadhamad1104/"
   },
   resume: {
     isAvailable: true,
@@ -114,15 +114,15 @@ export const portfolioData = {
       title: "Agentic Website Converter",
       slug: "agentic-website-converter",
       category: "Final Year Project",
-      status: "In Development",
+      status: "Built",
       contribution: "AI Engineer",
       coverImageReady: true,
       coverImage: "/images/projects/agentic-static-to-dynamic-website-converter/agentic-static-to-dynamic-website-converter-cover.png",
       description: "An AI-driven tool to convert static UI designs into dynamic, functional MERN components using agentic AI orchestration.",
-      overview: "Developing an AI-driven tool to convert static UI designs into dynamic, functional MERN components using agentic AI orchestration.",
+      overview: "An AI-driven tool to convert static UI designs into dynamic, functional MERN components using agentic AI orchestration.",
       problem: "Translating static UI designs into functional, full-stack components is a manual, repetitive process that slows down development.",
       approach: "Using agentic AI orchestration to analyze static designs and automatically generate the corresponding React components and backend logic.",
-      myContribution: "I am designing the agentic workflow and building the core conversion engine to translate designs into MERN stack components.",
+      myContribution: "I designed the agentic workflow and built the core conversion engine to translate designs into MERN stack components.",
       keyCapabilities: [
         "Static UI design analysis",
         "Agentic AI orchestration",
@@ -130,9 +130,24 @@ export const portfolioData = {
         "MERN stack code output"
       ],
       technology: "Generative AI, Agentic AI, React, Node.js, Express, MongoDB",
-      screenGalleryLabel: "FYP interface concept",
-      mobileScreens: [],
-      projectContext: "This project is actively in development.",
+      screenGalleryLabel: "Platform interfaces",
+      mobileScreens: [
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/login.png", title: "Login", caption: "User authentication.", alt: "Login Screen" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/register.png", title: "Register", caption: "New user registration.", alt: "Register Screen" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/profile-dashboard.png", title: "Dashboard", caption: "User profile dashboard.", alt: "Dashboard" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/how-it-work.png", title: "How It Works", caption: "Process overview.", alt: "How It Works" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/features.png", title: "Features", caption: "Key capabilities.", alt: "Features" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/pricing.png", title: "Pricing", caption: "Subscription plans.", alt: "Pricing" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/step1.png", title: "Step 1", caption: "Initial step in conversion.", alt: "Step 1" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/step2.png", title: "Step 2", caption: "Processing design.", alt: "Step 2" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/step3.png", title: "Step 3", caption: "Generating components.", alt: "Step 3" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/step4.png", title: "Step 4", caption: "Refining output.", alt: "Step 4" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/step5.png", title: "Step 5", caption: "Finalizing code.", alt: "Step 5" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/step6.png", title: "Step 6", caption: "Export preparation.", alt: "Step 6" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/step7.png", title: "Step 7", caption: "Ready to deploy.", alt: "Step 7" },
+        { image: "/images/projects/agentic-static-to-dynamic-website-converter/converted-project-details.png", title: "Converted Project", caption: "Detailed view of the converted project.", alt: "Converted Project Details" }
+      ],
+      projectContext: "Final Year Project converting static UI to dynamic websites.",
       tags: ["Agentic AI", "MERN Stack", "Generative AI", "React"],
       github: "https://github.com/muhammadhamad1104/agentic-website-converter"
     },
@@ -244,6 +259,57 @@ export const portfolioData = {
       projectContext: "E-commerce platform development.",
       tags: ["React", "Node.js", "E-Commerce", "MongoDB"],
       liveUrl: "https://irfwardrobe.com"
+    },
+    {
+      title: "Jarvis Voice Assistant",
+      slug: "jarvis-voice-assistant",
+      category: "AI & Voice Assistant",
+      status: "Built",
+      contribution: "AI Engineer",
+      coverImageReady: true,
+      coverImage: "/images/projects/jarvis/jarvis_option_3_driving_hud_concept.jpg",
+      description: "A voice assistant named Jarvis with embedded memory and natural voice synthesis using ElevenLabs, capable of performing automated tasks.",
+      overview: "Jarvis is an intelligent voice assistant with embedded memory and voice synthesis powered by ElevenLabs, capable of performing various automated tasks and maintaining context.",
+      problem: "Traditional assistants lack long-term memory and natural sounding voices for seamless daily interactions.",
+      approach: "Integrated ElevenLabs for high-quality voice synthesis and implemented a memory system allowing the assistant to remember context and execute tasks.",
+      myContribution: "Developed the core voice assistant, integrated the ElevenLabs API, and implemented the memory and task execution logic.",
+      keyCapabilities: [
+        "Voice synthesis using ElevenLabs",
+        "Embedded memory for contextual awareness",
+        "Task execution and automation"
+      ],
+      technology: "ElevenLabs, Python, GenAI, Voice Synthesis",
+      screenGalleryLabel: "Project interfaces",
+      mobileScreens: [
+        { image: "/images/projects/jarvis/Connected_Services_Mockup.jpg", title: "Connected Services", caption: "Mockup of connected services for Jarvis.", alt: "Connected Services Mockup" },
+        { image: "/images/projects/jarvis/jarvis_option_3_driving_hud_concept.jpg", title: "Driving HUD Concept", caption: "HUD concept for Jarvis.", alt: "Driving HUD Concept" }
+      ],
+      projectContext: "Personal AI voice assistant project.",
+      tags: ["ElevenLabs", "AI", "Voice Assistant", "Python"]
+    },
+    {
+      title: "Social Media Platform",
+      slug: "social-media-platform",
+      category: "Full-Stack Web App",
+      status: "In Progress",
+      contribution: "Full-Stack Developer",
+      coverImageReady: false,
+      coverImage: "",
+      description: "A modern social media platform currently in development, featuring real-time interactions and a dynamic user experience.",
+      overview: "Developing a feature-rich social media platform to connect users through real-time feeds, interactions, and media sharing.",
+      problem: "Creating a highly scalable and engaging social networking experience with real-time updates.",
+      approach: "Building the platform using modern full-stack web technologies to ensure a responsive and dynamic user experience.",
+      myContribution: "Architecting the full-stack application and implementing core features such as user authentication and real-time feeds.",
+      keyCapabilities: [
+        "Real-time user interactions",
+        "Dynamic content feeds",
+        "Scalable full-stack architecture"
+      ],
+      technology: "MERN Stack, Real-time Web",
+      screenGalleryLabel: "Platform interfaces",
+      mobileScreens: [],
+      projectContext: "Future addition currently in progress.",
+      tags: ["React", "Node.js", "Social Media", "In Progress"]
     }
   ],
   spotlight: {
@@ -385,6 +451,48 @@ export const portfolioData = {
       date: "2026",
       fileUrl: "/files/certificates/certificate-of-appriciation-organizing-business-round-competition.jpeg",
       isAvailable: true
+    },
+    {
+      title: "IELTS Preparation / Certification 1",
+      provider: "Coursera",
+      date: "2026",
+      fileUrl: "/files/certificates/IELTS/Coursera EPSU1MC4W4FP.pdf",
+      isAvailable: true
+    },
+    {
+      title: "IELTS Preparation / Certification 2",
+      provider: "Coursera",
+      date: "2026",
+      fileUrl: "/files/certificates/IELTS/Coursera FZXXPMEP07CV.pdf",
+      isAvailable: true
+    },
+    {
+      title: "IELTS Preparation / Certification 3",
+      provider: "Coursera",
+      date: "2026",
+      fileUrl: "/files/certificates/IELTS/Coursera V88C3LL0Y1SW.pdf",
+      isAvailable: true
+    },
+    {
+      title: "IELTS Preparation / Certification 4",
+      provider: "Coursera",
+      date: "2026",
+      fileUrl: "/files/certificates/IELTS/Coursera W5BKZQO2BWYH.pdf",
+      isAvailable: true
+    },
+    {
+      title: "Digital Forensic Specialist",
+      provider: "Learning / In Progress",
+      date: "2026",
+      fileUrl: "",
+      isAvailable: false
+    },
+    {
+      title: "Generative AI Engineering Specialist",
+      provider: "IBM / Coursera",
+      date: "In Progress",
+      fileUrl: "",
+      isAvailable: false
     }
   ]
 };
