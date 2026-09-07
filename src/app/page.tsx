@@ -78,17 +78,23 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="bg-surface border border-border p-5 rounded-xl shadow-xl w-full sm:w-[260px] self-start lg:self-end"
+                className="bg-surface border border-border p-5 rounded-xl shadow-xl w-full sm:w-[260px] self-start lg:self-end flex flex-col gap-4"
               >
-                <div className="flex items-center gap-2 mb-2">
+                <div className="flex items-center gap-2">
                   <span className="relative flex h-2.5 w-2.5 shrink-0">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-sage opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-accent-sage"></span>
                   </span>
                   <span className="text-xs font-semibold text-accent-sage uppercase tracking-wider">In Development</span>
                 </div>
-                <p className="text-sm font-semibold text-text-primary mb-1 line-clamp-1">Agentic Website Converter</p>
-                <p className="text-xs text-text-muted">Agentic AI · GenAI · React</p>
+                <div>
+                  <p className="text-sm font-semibold text-text-primary mb-1 line-clamp-1">Agentic Website Converter</p>
+                  <p className="text-xs text-text-muted">Agentic AI · GenAI · React</p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-text-primary mb-1 line-clamp-1">Jarvis Voice Assistant</p>
+                  <p className="text-xs text-text-muted">ElevenLabs · AI · Python</p>
+                </div>
               </motion.div>
             </motion.div>
           </div>

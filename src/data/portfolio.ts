@@ -264,12 +264,12 @@ export const portfolioData = {
       title: "Jarvis Voice Assistant",
       slug: "jarvis-voice-assistant",
       category: "AI & Voice Assistant",
-      status: "Built",
+      status: "In Progress",
       contribution: "AI Engineer",
       coverImageReady: true,
       coverImage: "/images/projects/jarvis/jarvis_option_3_driving_hud_concept.jpg",
-      description: "A voice assistant named Jarvis with embedded memory and natural voice synthesis using ElevenLabs, capable of performing automated tasks.",
-      overview: "Jarvis is an intelligent voice assistant with embedded memory and voice synthesis powered by ElevenLabs, capable of performing various automated tasks and maintaining context.",
+      description: "A voice assistant named Jarvis with embedded memory and natural voice synthesis using ElevenLabs, capable of performing automated tasks. Future plans include deep integration with a custom social media platform.",
+      overview: "Jarvis is an intelligent voice assistant with embedded memory and voice synthesis powered by ElevenLabs, capable of performing various automated tasks and maintaining context. The project aims to eventually integrate with a custom social media platform for enhanced interactivity.",
       problem: "Traditional assistants lack long-term memory and natural sounding voices for seamless daily interactions.",
       approach: "Integrated ElevenLabs for high-quality voice synthesis and implemented a memory system allowing the assistant to remember context and execute tasks.",
       myContribution: "Developed the core voice assistant, integrated the ElevenLabs API, and implemented the memory and task execution logic.",
@@ -286,30 +286,6 @@ export const portfolioData = {
       ],
       projectContext: "Personal AI voice assistant project.",
       tags: ["ElevenLabs", "AI", "Voice Assistant", "Python"]
-    },
-    {
-      title: "Social Media Platform",
-      slug: "social-media-platform",
-      category: "Full-Stack Web App",
-      status: "In Progress",
-      contribution: "Full-Stack Developer",
-      coverImageReady: false,
-      coverImage: "",
-      description: "A modern social media platform currently in development, featuring real-time interactions and a dynamic user experience.",
-      overview: "Developing a feature-rich social media platform to connect users through real-time feeds, interactions, and media sharing.",
-      problem: "Creating a highly scalable and engaging social networking experience with real-time updates.",
-      approach: "Building the platform using modern full-stack web technologies to ensure a responsive and dynamic user experience.",
-      myContribution: "Architecting the full-stack application and implementing core features such as user authentication and real-time feeds.",
-      keyCapabilities: [
-        "Real-time user interactions",
-        "Dynamic content feeds",
-        "Scalable full-stack architecture"
-      ],
-      technology: "MERN Stack, Real-time Web",
-      screenGalleryLabel: "Platform interfaces",
-      mobileScreens: [],
-      projectContext: "Future addition currently in progress.",
-      tags: ["React", "Node.js", "Social Media", "In Progress"]
     }
   ],
   spotlight: {
@@ -453,31 +429,15 @@ export const portfolioData = {
       isAvailable: true
     },
     {
-      title: "IELTS Preparation / Certification 1",
+      title: "IELTS Preparation / Certification",
       provider: "Coursera",
       date: "2026",
-      fileUrl: "/files/certificates/IELTS/Coursera EPSU1MC4W4FP.pdf",
-      isAvailable: true
-    },
-    {
-      title: "IELTS Preparation / Certification 2",
-      provider: "Coursera",
-      date: "2026",
-      fileUrl: "/files/certificates/IELTS/Coursera FZXXPMEP07CV.pdf",
-      isAvailable: true
-    },
-    {
-      title: "IELTS Preparation / Certification 3",
-      provider: "Coursera",
-      date: "2026",
-      fileUrl: "/files/certificates/IELTS/Coursera V88C3LL0Y1SW.pdf",
-      isAvailable: true
-    },
-    {
-      title: "IELTS Preparation / Certification 4",
-      provider: "Coursera",
-      date: "2026",
-      fileUrl: "/files/certificates/IELTS/Coursera W5BKZQO2BWYH.pdf",
+      fileUrls: [
+        "/files/certificates/IELTS/Coursera EPSU1MC4W4FP.pdf",
+        "/files/certificates/IELTS/Coursera FZXXPMEP07CV.pdf",
+        "/files/certificates/IELTS/Coursera V88C3LL0Y1SW.pdf",
+        "/files/certificates/IELTS/Coursera W5BKZQO2BWYH.pdf"
+      ],
       isAvailable: true
     },
     {
