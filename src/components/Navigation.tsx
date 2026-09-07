@@ -56,11 +56,11 @@ export function Navigation() {
           </ul>
           
           <div className="flex items-center gap-4 border-l border-border pl-6">
-            <a href="https://github.com/Muhammad-Hamad" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-text-primary transition-colors">
+            <a href="https://github.com/muhammadhamad1104" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-text-primary transition-colors">
               <Github size={20} className="shrink-0" />
               <span className="sr-only">GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/muhammad-hamad" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/muhammadhamad1104/" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-text-primary transition-colors">
               <Linkedin size={20} className="shrink-0" />
               <span className="sr-only">LinkedIn</span>
             </a>
@@ -97,10 +97,10 @@ export function Navigation() {
               ))}
             </ul>
             <div className="flex items-center gap-4 pt-4 border-t border-border">
-              <a href="https://github.com/Muhammad-Hamad" target="_blank" rel="noopener noreferrer" className="p-2 bg-surface-hover rounded-full text-text-primary">
+              <a href="https://github.com/muhammadhamad1104" target="_blank" rel="noopener noreferrer" className="p-2 bg-surface-hover rounded-full text-text-primary">
                 <Github size={20} className="shrink-0" />
               </a>
-              <a href="https://www.linkedin.com/in/muhammad-hamad" target="_blank" rel="noopener noreferrer" className="p-2 bg-surface-hover rounded-full text-text-primary">
+              <a href="https://www.linkedin.com/in/muhammadhamad1104/" target="_blank" rel="noopener noreferrer" className="p-2 bg-surface-hover rounded-full text-text-primary">
                 <Linkedin size={20} className="shrink-0" />
               </a>
               <ButtonLink href="/#contact" className="w-full" onClick={() => setIsMobileMenuOpen(false)}>Let&apos;s connect</ButtonLink>

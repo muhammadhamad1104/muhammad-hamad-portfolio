@@ -63,7 +63,7 @@ export function AssistantModal() {
         reply: "Hamad's featured projects include Bulao (Voice-first Urdu-native prototype), AI-Powered CV Generator, Agentic Website Converter (FYP), AI University FAQ Chatbot, and AI-OS. You can view all of them in the Work section.",
         actions: [
           { label: "Explore My Work", href: "/#work" },
-          { label: "GitHub", href: "https://github.com/Muhammad-Hamad" }
+          { label: "GitHub", href: "https://github.com/muhammadhamad1104" }
         ]
       };
     }
@@ -89,7 +89,7 @@ export function AssistantModal() {
         actions: [
           { label: "Email me", href: "mailto:muhammadhamad1104@gmail.com" },
           { label: "WhatsApp", href: "https://wa.me/923021104820" },
-          { label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-hamad-7b6b35293" }
+          { label: "LinkedIn", href: "https://www.linkedin.com/in/muhammadhamad1104/" }
         ]
       };
     }
@@ -97,7 +97,7 @@ export function AssistantModal() {
       return {
         reply: "Explore Hamad's repositories, contributions, and open-source code on GitHub.",
         actions: [
-          { label: "GitHub", href: "https://github.com/Muhammad-Hamad" }
+          { label: "GitHub", href: "https://github.com/muhammadhamad1104" }
         ]
       };
     }
@@ -105,7 +105,7 @@ export function AssistantModal() {
       return {
         reply: "Connect with Muhammad Hamad on LinkedIn to see his professional network and updates.",
         actions: [
-          { label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-hamad-7b6b35293" }
+          { label: "LinkedIn", href: "https://www.linkedin.com/in/muhammadhamad1104/" }
         ]
       };
     }

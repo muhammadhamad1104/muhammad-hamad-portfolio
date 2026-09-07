@@ -9,7 +9,7 @@ export function Footer() {
           <a href="https://github.com/muhammadhamad1104" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-text-primary text-sm transition-colors">
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/muhammad-hamad" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-text-primary text-sm transition-colors">
+          <a href="https://www.linkedin.com/in/muhammadhamad1104/" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-text-primary text-sm transition-colors">
             LinkedIn
           </a>
         </div>
