@@ -118,6 +118,7 @@ export const portfolioData = {
       contribution: "AI Engineer",
       coverImageReady: true,
       coverImage: "/images/projects/agentic-static-to-dynamic-website-converter/agentic-static-to-dynamic-website-converter-cover.png",
+      deviceType: "browser",
       description: "An AI-driven tool to convert static UI designs into dynamic, functional MERN components using agentic AI orchestration.",
       overview: "An AI-driven tool to convert static UI designs into dynamic, functional MERN components using agentic AI orchestration.",
       problem: "Translating static UI designs into functional, full-stack components is a manual, repetitive process that slows down development.",
