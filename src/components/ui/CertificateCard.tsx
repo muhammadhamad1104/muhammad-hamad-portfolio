@@ -5,12 +5,18 @@ import { Award, ExternalLink } from "lucide-react";
 import * as motion from "motion/react-client";
 import { CertificateModal } from "./CertificateModal";
 
+interface CertificateFile {
+  name?: string;
+  url: string;
+}
+
 interface CertificateCardProps {
   certificate: {
     title: string;
     provider: string;
     date: string;
-    fileUrl: string;
+    fileUrl?: string;
+    fileUrls?: (string | CertificateFile)[];
     isAvailable: boolean;
   };
   index: number;
