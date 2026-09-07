@@ -377,8 +377,8 @@ export const portfolioData = {
       provider: "Anthropic",
       date: "2026",
       fileUrls: [
-        "/files/certificates/introduction-to-model-context-protocol.pdf",
-        "/files/certificates/model-context-protocol-advanced-topic.pdf"
+        { name: "Introduction to Model Context Protocol", url: "/files/certificates/introduction-to-model-context-protocol.pdf" },
+        { name: "Advanced Model Context Protocol Topics", url: "/files/certificates/model-context-protocol-advanced-topic.pdf" }
       ],
       isAvailable: true
     },
@@ -429,10 +429,10 @@ export const portfolioData = {
       provider: "Coursera",
       date: "2026",
       fileUrls: [
-        "/files/certificates/IELTS/Coursera EPSU1MC4W4FP.pdf",
-        "/files/certificates/IELTS/Coursera FZXXPMEP07CV.pdf",
-        "/files/certificates/IELTS/Coursera V88C3LL0Y1SW.pdf",
-        "/files/certificates/IELTS/Coursera W5BKZQO2BWYH.pdf"
+        { name: "IELTS Reading Section Skills Mastery", url: "/files/certificates/IELTS/Coursera EPSU1MC4W4FP.pdf" },
+        { name: "IELTS Writing Section Skills Mastery", url: "/files/certificates/IELTS/Coursera FZXXPMEP07CV.pdf" },
+        { name: "IELTS Preparation Specialization", url: "/files/certificates/IELTS/Coursera V88C3LL0Y1SW.pdf" },
+        { name: "IELTS Listening and Speaking Sections Skills Mastery", url: "/files/certificates/IELTS/Coursera W5BKZQO2BWYH.pdf" }
       ],
       isAvailable: true
     },

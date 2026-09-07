@@ -5,12 +5,17 @@ import { X, ExternalLink, Download } from "lucide-react";
 import { ButtonLink } from "./Button";
 import * as motion from "motion/react-client";
 
+interface CertificateFile {
+  name?: string;
+  url: string;
+}
+
 interface Certificate {
   title: string;
   provider: string;
   date: string;
   fileUrl?: string;
-  fileUrls?: string[];
+  fileUrls?: (string | CertificateFile)[];
   isAvailable: boolean;
 }
 
@@ -49,6 +54,9 @@ export function CertificateModal({
 
   if (!isOpen || !certificate) return null;
 
+  const currentFile = certificate.fileUrls ? certificate.fileUrls[currentIndex] : null;
+  const currentFileName = currentFile && typeof currentFile === 'object' ? currentFile.name : null;
+
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
       <motion.div 
@@ -73,6 +81,9 @@ export function CertificateModal({
         <div className="flex items-center justify-between p-4 sm:p-6 border-b border-border bg-background-secondary">
           <div>
             <h3 id="modal-title" className="text-xl font-bold text-text-primary pr-8">{certificate.title}</h3>
+            {currentFileName && (
+              <p className="text-accent-primary font-medium text-sm mt-1">{currentFileName}</p>
+            )}
             <p className="text-text-muted text-sm mt-1">{certificate.provider} · {certificate.date}</p>
           </div>
           <button 
@@ -88,12 +99,13 @@ export function CertificateModal({
         <div className="flex-1 overflow-auto bg-surface p-4 sm:p-6 flex flex-col items-center justify-center min-h-[50vh] relative">
           {certificate.isAvailable ? (
             (() => {
-              const currentFileUrl = certificate.fileUrls 
+              const fileObjOrStr = certificate.fileUrls 
                 ? certificate.fileUrls[currentIndex] 
                 : certificate.fileUrl;
               
-              if (!currentFileUrl) return null;
+              if (!fileObjOrStr) return null;
               
+              const currentFileUrl = typeof fileObjOrStr === 'string' ? fileObjOrStr : fileObjOrStr.url;
               const isPdf = currentFileUrl.toLowerCase().endsWith('.pdf');
               
               return (
@@ -183,13 +195,13 @@ export function CertificateModal({
               )}
             </div>
             <ButtonLink 
-              href={certificate.fileUrls ? certificate.fileUrls[currentIndex] : certificate.fileUrl!} 
+              href={certificate.fileUrls ? (typeof certificate.fileUrls[currentIndex] === 'string' ? (certificate.fileUrls[currentIndex] as string) : (certificate.fileUrls[currentIndex] as CertificateFile).url) : certificate.fileUrl!} 
               download 
               variant="outline" 
               size="sm" 
               className="gap-2"
             >
-              <Download size={16} className="shrink-0" /> Download {(certificate.fileUrls ? certificate.fileUrls[currentIndex] : certificate.fileUrl!).toLowerCase().endsWith('.pdf') ? 'PDF' : 'Image'}
+              <Download size={16} className="shrink-0" /> Download {(certificate.fileUrls ? (typeof certificate.fileUrls[currentIndex] === 'string' ? (certificate.fileUrls[currentIndex] as string) : (certificate.fileUrls[currentIndex] as CertificateFile).url) : certificate.fileUrl!).toLowerCase().endsWith('.pdf') ? 'PDF' : 'Image'}
             </ButtonLink>
           </div>
         )}
